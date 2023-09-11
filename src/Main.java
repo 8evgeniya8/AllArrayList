@@ -1,6 +1,8 @@
 import allArrayList.Converting.ConvertingArrayListToArray;
 import allArrayList.add.AddArrayList;
+import allArrayList.addingAllElementsFromAnotherCollection.AddingAllFromAnotherCollection;
 import allArrayList.checkEmpty.CheckArrayListIsEmpty;
+import allArrayList.checkingTwoArrayListsEqua.СheckingTwoEqua;
 import allArrayList.methodsOfCleaning.MethodsCleaningArrayList;
 import allArrayList.metodToAccessElements.HowToAccessElementsArrayList;
 import allArrayList.sort.SortArrayList;
@@ -64,7 +66,24 @@ public class Main {
 //        Сортування в ArrayList
         SortArrayList sortArrayList = new SortArrayList();
         sortArrayList.methodsCollectionsSort();
-        sortArrayList.methodsComparatorSort();
+        sortArrayList.methodsComparatorSort();              // не працює
         sortArrayList.methodStreamSort();
+        System.out.println();
+
+//      Додавання всіх елементів з одного ArrayList в інший ArrayList
+        AddingAllFromAnotherCollection addingAll = new AddingAllFromAnotherCollection();
+        addingAll.methodaddAll();
+        System.out.println();
+        addingAll.methodLoop();
+        System.out.println();
+        addingAll.methodFlows();
+        System.out.println();
+
+//        Порівняння значень двох ArrayList
+        СheckingTwoEqua сheckingEqua = new СheckingTwoEqua();
+        сheckingEqua.containsAll();
+        сheckingEqua.equalsСheckingTwoList();
+        сheckingEqua.manualComparison();
+        System.out.println();
     }
 }

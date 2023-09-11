@@ -27,7 +27,7 @@ public void methodsComparatorSort(){
     List<String> name = new ArrayList<>();
     name.add("Anna");
     name.add("Olga");
-    name.add("Mariya");
+    name.add("Mariya");                                    //не працює
     name.add("Blada");
         Comparator<String> lenghtComparator
                 = (str1,str2)->str2.length();
