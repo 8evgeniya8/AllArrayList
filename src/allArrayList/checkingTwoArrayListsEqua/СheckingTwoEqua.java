@@ -18,11 +18,12 @@ public class СheckingTwoEqua {
     }
 
     //     Метод containsAll, перевіряє усі елементи іншого ArrayList.
+//     Не вимагає, щоб елементи були в одному порядку.
     public void containsAll() {
         List<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3));
         List<Integer> list2 = new ArrayList<>(Arrays.asList(3, 2, 1));
-        boolean isEqals = list1.contains(list2) && list2.contains(list1);
-        System.out.println("Чи однакові значння в одному порядку(порядок був різний!!)? " +
+        boolean isEqals = list1.containsAll(list2) && list2.containsAll(list1);
+        System.out.println("Чи однакові значння в одному порядку? " +
                 "використання методу containsAll " + isEqals);
     }
 
