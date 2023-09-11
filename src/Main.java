@@ -3,6 +3,8 @@ import allArrayList.add.AddArrayList;
 import allArrayList.addingAllElementsFromAnotherCollection.AddingAllFromAnotherCollection;
 import allArrayList.checkEmpty.CheckArrayListIsEmpty;
 import allArrayList.checkingTwoArrayListsEqua.СheckingTwoEqua;
+import allArrayList.copying.CopingArrayList;
+import allArrayList.doubleWordSearch.DoubleWordSearch;
 import allArrayList.methodsOfCleaning.MethodsCleaningArrayList;
 import allArrayList.metodToAccessElements.HowToAccessElementsArrayList;
 import allArrayList.sort.SortArrayList;
@@ -85,5 +87,20 @@ public class Main {
         сheckingEqua.equalsСheckingTwoList();
         сheckingEqua.manualComparison();
         System.out.println();
+
+//        Методи копіювання
+        CopingArrayList coping = new CopingArrayList();
+        coping.shallowСopy();
+                                      // не працює copy!!! в Apache Commons Collections
+                                      // пропускаю метод
+        System.out.println();
+
+//        Методи пошук дубльованих(задвоєних) слів
+        DoubleWordSearch doubleSearch = new DoubleWordSearch();
+        doubleSearch.metodHeshSet();
+        doubleSearch.mapMetod();           // Цей метод не розумію
+        doubleSearch.streamsMetod();        // Цей метод не розумію
+        System.out.println();
+
     }
 }
