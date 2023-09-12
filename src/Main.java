@@ -1,4 +1,5 @@
-import allArrayList.Converting.ConvertingArrayListToArray;
+import allArrayList.converting.ConvertingArrayListToArray;
+import allArrayList.removingAllElementsMatchCondition.RemovingAllMatchCondition;
 import allArrayList.add.AddArrayList;
 import allArrayList.addingAllElementsFromAnotherCollection.AddingAllFromAnotherCollection;
 import allArrayList.checkEmpty.CheckArrayListIsEmpty;
@@ -70,6 +71,15 @@ public class Main {
         sortArrayList.methodsCollectionsSort();
         sortArrayList.methodsComparatorSort();              // не працює
         sortArrayList.methodStreamSort();
+        List<String> sortString = sortArrayList.sortString();
+        System.out.println("Сортування списку рядків з кінця до початку " + sortString);
+        System.out.println();
+
+//        Методи пошук дубльованих(задвоєних) слів
+        DoubleWordSearch doubleSearch = new DoubleWordSearch();
+        doubleSearch.metodHeshSet();
+        doubleSearch.mapMetod();           // Цей метод не розумію
+        doubleSearch.streamsMetod();        // Цей метод не розумію
         System.out.println();
 
 //      Додавання всіх елементів з одного ArrayList в інший ArrayList
@@ -95,11 +105,12 @@ public class Main {
                                       // пропускаю метод
         System.out.println();
 
-//        Методи пошук дубльованих(задвоєних) слів
-        DoubleWordSearch doubleSearch = new DoubleWordSearch();
-        doubleSearch.metodHeshSet();
-        doubleSearch.mapMetod();           // Цей метод не розумію
-        doubleSearch.streamsMetod();        // Цей метод не розумію
+//        видалення всіх елементів у ArrayList,
+//        які відповідають певній умові
+        RemovingAllMatchCondition removingCondition = new RemovingAllMatchCondition();
+        removingCondition.metodRemoveIf();
+        System.out.println();
+        removingCondition.metodStream();
         System.out.println();
 
     }
