@@ -27,7 +27,7 @@ public void methodsComparatorSort(){
     name.add("Mariya");                                    //не працює
     name.add("Blada");
         Comparator<String> lenghtComparator
-                = (str1,str2)->str2.length();
+                = (str1,str2)->str1.length()-str2.length();
         Collections.sort(name,lenghtComparator);
         System.out.println("Метод сортування Comparator порівнює " +
                 "довжини рядків у зворотному порядку "+name);
